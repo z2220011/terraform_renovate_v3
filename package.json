@@ -13,7 +13,7 @@
   "author": "Test User",
   "license": "MIT",
   "dependencies": {
-    "express": "4.17.1",
+    "express": "4.20.0",
     "lodash": "4.17.23",
     "axios": "0.21.1",
     "dotenv": "8.2.0",
