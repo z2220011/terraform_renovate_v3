@@ -3,10 +3,5 @@
   "extends": [
     "config:recommended"
   ],
-  "timezone": "Asia/Tokyo",
-  "schedule": [
-    "after 8pm every weekday",
-    "every weekend",
-    "before 8am every weekday"
-  ]
+  "timezone": "Asia/Tokyo"
 }
