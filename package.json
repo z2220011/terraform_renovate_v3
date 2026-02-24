@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "4.17.1",
-    "lodash": "4.17.20",
+    "lodash": "4.17.23",
     "axios": "0.21.1",
     "dotenv": "8.2.0",
     "moment": "2.29.1"
