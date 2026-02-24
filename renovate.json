@@ -5,24 +5,20 @@
   ],
   "timezone": "Asia/Tokyo",
 
-  "prTitle": "依存関係更新: {{{depName}}} を {{#if isMajor}}v{{{newMajor}}}{{else}}{{#if isPatch}}{{{newVersion}}}{{else}}v{{{newMajor}}}.{{{newMinor}}}{{/if}}{{/if}} にアップデート",
-  "commitMessagePrefix": "依存関係:",
-  "labels": ["依存関係", "renovate"],
+  "enabledManagers": ["terraform"],
+
+  "prTitle": "Terraform: {{{depName}}} プロバイダーを {{#if isMajor}}v{{{newMajor}}}{{else}}{{{newVersion}}}{{/if}} にアップデート",
+  "commitMessagePrefix": "terraform:",
+  "labels": ["terraform", "インフラ"],
 
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
-      "labels": ["メジャーアップデート", "要確認"]
+      "labels": ["terraform", "メジャーアップデート", "要確認"]
     },
     {
-      "matchUpdateTypes": ["security"],
-      "labels": ["セキュリティ", "緊急"]
-    },
-    {
-      "matchManagers": ["terraform"],
-      "groupName": "Terraform プロバイダー",
-      "labels": ["terraform", "インフラ"],
-      "commitMessagePrefix": "terraform:"
+      "matchUpdateTypes": ["minor", "patch"],
+      "labels": ["terraform", "マイナーアップデート"]
     }
   ]
 }
